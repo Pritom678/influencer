@@ -73,8 +73,8 @@ section{
     gap: 133px;
 }
 .first-content{
-    width: 582px;
-    height: 270px;
+    width: 40%;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -96,12 +96,13 @@ section{
     /* width: 100%;
     height: auto; */
     background-image: url(../images/Circle\ design.svg);
+    background-size: 400px 400px;
     background-repeat: no-repeat;
     /* padding-right: 40px; */
     /* margin-right: 20px; */
 }
 .banner img{
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     margin-top: 40px;
 }
@@ -112,6 +113,81 @@ section{
     align-items: center;
     gap: 60px;
 }
+/* second container */
+.second-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--gray);
+    text-align: center;
+}
+.slides{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* margin: 0 auto; */
+}
+.box{
+    width: 329px;
+    height: 450px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* filter: drop-shadow(0 0 40px rgba(0, 0, 0, 0.15)); */
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    padding: 17px 14.5px;
+    /* margin: 0 auto; */
+    
+}
+.box img{
+    margin-left: 13px;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+.item-name{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--gray);
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+.price{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: rgba(19, 18, 18, 0.808);
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 10px;
+}
+.rating > i{
+    color: gold;
+}
+.item-description{
+    width: 196px;
+    height: 61px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--light-gray);
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+.see-more{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--pink);
+    text-align: end;
+    margin-right: 80px;
+}
+
 /* smaller device */
 @media screen and (max-width: 576px) {
     /* header */
@@ -127,13 +203,23 @@ section{
     }
     /* first-container */
     .first-container{
-        flex-direction: column-reverse;
-        display: none;
+        flex-direction: column-reverse;   
     }
+    .first-content{
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+    .banner{
+       background-size: 350px 350px;
+    }
+    
     /* sponsors */
     .sponsors{
         flex-wrap: wrap;
         gap: 20px;
         row-gap: 30px;
     }
+    /* second container */
+    
 }
