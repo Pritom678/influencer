@@ -194,6 +194,9 @@ section{
     align-items: center;
     gap: 96px;
 }
+.third-banner img{
+    width: 100%;
+}
 .third-content{
     width: 45%;
 }
@@ -211,6 +214,45 @@ section{
 }
 .join-btn{
     border-radius: 0;
+}
+/* footer styles */
+.footer{
+   margin-top: 80px;
+    background-color: #0A0826;
+    padding: 20px;
+}
+.footer-title, .copyrights{
+    color: white;
+    text-align: center;
+}
+.footer-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.copyrights{
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding-top: 15px;
+}
+.icon{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #2d2b4b;
+}
+.icon i{
+    margin: 8px;
+    color: white;
 }
 
 /* smaller device */
@@ -260,4 +302,5 @@ section{
     width: 75%;
     text-align: center;
     }
+    
 }
